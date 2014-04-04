@@ -3,16 +3,21 @@
 }
 
 body {
-	background-color: gray;
+	background-color: #E0FFFF;
 	font-family: arial;
 }
 
 p {
-	color: purple;
+	color: black;
+	font-size: 14px;
+}
+
+li {
+	font-size: 12px;
 }
 
 .orange {
-	color: orange;
+	color: red;
 	font-family: serif;
 	font-size: 20px;
 }
