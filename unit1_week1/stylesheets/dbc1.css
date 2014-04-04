@@ -1,0 +1,23 @@
+#heading {
+	font-weight: bold;
+}
+
+body {
+	background-color: gray;
+	font-family: arial;
+}
+
+p {
+	color: purple;
+}
+
+.orange {
+	color: orange;
+	font-family: serif;
+	font-size: 20px;
+}
+
+.subheading {
+	color: green;
+}
+
