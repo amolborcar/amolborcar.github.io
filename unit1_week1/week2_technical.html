@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel = "stylesheet" type = "text/css" href = "stylesheets/blog_styles.css">
+	<title> Amol's Dev Bootcamp Blog </title>
+</head>
+
+<body id = "body">
+
+	<section>
+		<article class = "post">
+			<h2> Absolute, Relative and Fixed Positioning </h2>
+			<h3> April 10, 2014 </h3>
+				<p> 
+					For my first technical blog post, I'm choosing to write about positioning.  I've chosen this topic because it gave me the most trouble while attempting to complete the Week 1 challenges.  I thought this would give me a good reason to research and write-up my findings, which will hopefully not only help me but also help all of you!
+				</p>
+				<br/><p>
+					To start off, each element has a position value of "static."  These elements are always positioned according to the normal flow of the webpage, regardless of properties that may try to change the positioning (left, right, etc.).  However, static elements can still run into other elements that are positioned differently.  My interpretation is that if every element has a style of "position: static" then nothing on the page will overlap.  Of course, the page probably won't be too visually appealing.
+				</p>
+				<br/><p>
+					Absolute elements are positioned based their first parent element that has a position other than "static."  If no element has a different position, the &lthtml&gt tag will be considered to be the first parent element.  I consider that to mean that the element will then be positioned relative to the beginning of the page.  Absolute positioning was the most confusing thing for me to work around, because I kept having trouble remembering what the "absolute" position of the element was actually relative to (that's confusing just to type).  My opinion is that the way to deal with this is to only use absolute positioning for sections or divs where every element will be positioned as something other than static, but my opinion may change as I work more with positioning.
+				</p>
+				<br/><p>
+					Relative positioning will position an element relative to where it would be if its position was "static."  Relative positioning seems to be the most intuitive positioning to me.  If you assign "position: relative" to an element and then give it a property of "left: 20px" then the element will have 20px of space to the left of where it would be if it was a static element.  If every other element on the page is static, relative positioning is very easy to implement.
+				</p>
+				<br/><p>
+					Fixed positioning is extremely useful.  Assigning an element to have "fixed" position means that it will not move from that location on the user's browser, no matter how much scrolling the user does.  This would be useful for a navigation bar at the top of a page, which many sites have; the bar always stays at the top so the user can easily navigate within the website.  For example, <a href = "http://www.facebook.com" target = "_blank"> Facebook </a> has its navigation bar, which contains a search box and link to the user's profile, among other things, set with a fixed position. 
+				</p>
+				<br/><p>
+					Even if positioning is something you understand theoretically, playing around with the specific elements on your page will always be necessary.  I've attached some links below that helped me with my understanding and I'm sure I'll reference them several times in the coming months. 
+				</p>
+				<h4> Links </h4>
+				<ul>
+					<li><a href = "http://www.w3schools.com/css/css_positioning.asp" target = "_blank">W3Schools</a></li>
+					<li><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/position" target = "_blank">Mozilla Developer Network</a></li>
+					<li><a href = "http://www.barelyfitz.com/screencast/html-training/css/positioning/" target="_blank">BarelyFitz's Tutorial</a></li>
+				</ul>
+
+		</article>
+	</section>
+</body>
+
