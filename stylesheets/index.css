@@ -4,9 +4,17 @@
 	text-align: center;
 	font-size: 24px;
 	font-weight: bold;
-	padding: 10px 0 10px 0;
-	height: 200px;
+	padding: 0px 0 0px 0;
+	height: 450px;
 	border: 5px black solid;
+}
+
+#banner_title {
+	position: relative;
+	bottom: 600px;
+	font-size: 160px;
+	font-family: 'Dancing Script', 'cursive';
+	color: black;
 }
 
 /* Navigation Pane */
@@ -41,30 +49,64 @@ nav a:hover {
 	color: green;
 }
 
-/* Sidebar */
-/* This should be fixed at the left after scrolling but I need Javascript for that */
+/* Left Sidebar */
 
-#sidebar {
+#leftbar {
 	position: relative;
 	width: 230px;
 	float: left;
+	padding-right: 10px;
 	border-right: 1px solid black;
 }
 
-#sidebar .sidepic {
+.lefttext {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 24px;
+}
+
+/* Right Sidebar */
+/* This should be fixed at the left after scrolling but I need Javascript for that */
+
+#rightbar {
+	position: relative;
+	width: 230px;
+	float: right;
+	padding-left: 10px;
+	border-left: 1px solid black;
+}
+
+#rightbar h1 {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#rightbar .rightpic {
 	height: 200px;
 	width: 200px;
-	margin-top: 10px;
 	padding: 10px;
 	padding-bottom: 15px;
 	border-bottom: 1px dashed black;
+	border-top: 1px dashed black;
 	/*float: left;*/
 }
 
-#sidebar .sidelist {
+#rightbar .righttext {
+	padding: 0px 20px 0px 20px;
+}
+
+#rightbar .rightlist {
 	margin-top: 20px;
+	padding: 0px 20px 0px 20px;
 	list-style-type: none;
 	height: 300px;
+}
+
+#rightbar li .icon {
+	height: 50px;
+	width: 50px;
+	margin: 10px 0 10px 0;
 }
 
 /* Body */
@@ -72,22 +114,41 @@ nav a:hover {
 #body {
 	font-size: 12px;
 	font-family: arial;
-	background-color: #EBF5FF;
+	background-color: #D8D8D8;
 }
 
 /* Content */
 
-#content {
-	position: relative;
-	float: left;
-	margin-top: 10px;
-	margin-left: 20px;
-	height: 500px;
+.content {
+	margin: 10px 260px 0px 260px;
+}
+
+/* Blog Posts */
+
+.blogpost h2 {
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.blogpost h3 {
+	font-size: 18px;
+	margin-top: -10px;
+}
+
+.blogpost h4 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.blogpost p {
+	font-weight: italic;
 }
 
 /* Footer */
 
 /*Note: I'm not sure how to position this except for putting it absolutely positioned on the site since it doesn't have a parent*/
+
 #footer {
 	clear: both;
 	position: relative;
