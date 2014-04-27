@@ -122,7 +122,7 @@ nav a:hover {
 #body {
 	font-size: 12px;
 	font-family: arial;
-	background-color: #D8D8D8;
+	background-color: #D4FFE9;
 }
 
 /* Content */
@@ -151,6 +151,16 @@ nav a:hover {
 
 .blogpost p {
 	font-weight: italic;
+}
+
+.code {
+	font-family: serif;
+	background-color: #C0C0C0;
+	font-size: 14px;
+}
+
+.comment {
+	color: gray;
 }
 
 /* Footer */
