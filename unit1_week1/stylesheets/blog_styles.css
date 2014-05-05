@@ -153,6 +153,24 @@ nav a:hover {
 	font-weight: italic;
 }
 
+.blogpost .blogimage {
+	height: 300px;
+	width: 500px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+
+.blogpost .caption {
+	text-align: center;
+	font-family: serif;
+	font-size: 12px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
 .code {
 	font-family: serif;
 	background-color: #C0C0C0;
@@ -162,6 +180,8 @@ nav a:hover {
 .comment {
 	color: gray;
 }
+
+
 
 /* Footer */
 
