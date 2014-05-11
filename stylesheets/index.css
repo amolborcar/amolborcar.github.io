@@ -57,6 +57,7 @@ nav a:hover {
 	float: left;
 	padding-right: 10px;
 	border-right: 1px solid black;
+	/*background-color: #52E93A;*/
 }
 
 .lefttext {
@@ -74,6 +75,7 @@ nav a:hover {
 	float: right;
 	padding-left: 10px;
 	border-left: 1px solid black;
+	/*background-color: #389E28;*/
 }
 
 #rightbar h1 {
@@ -114,6 +116,7 @@ nav a:hover {
 #body {
 	font-size: 12px;
 	font-family: arial;
+	/*background-color: #1DD300;*/
 	background-color: #D4FFE9;
 }
 
@@ -121,6 +124,7 @@ nav a:hover {
 
 .content {
 	margin: 10px 260px 0px 260px;
+
 }
 
 /* Blog Posts */
