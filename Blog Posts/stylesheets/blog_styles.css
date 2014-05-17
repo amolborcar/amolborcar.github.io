@@ -172,9 +172,11 @@ nav a:hover {
 }
 
 .code {
-	font-family: serif;
-	background-color: #C0C0C0;
+	font-family: monospace, courier;
+	background-color: #f9f9f9;
 	font-size: 14px;
+	border: 1px solid #ddd;
+	padding: 5px;
 }
 
 .comment {
