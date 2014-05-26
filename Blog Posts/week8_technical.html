@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html>
+<head>
+	<link rel = "stylesheet" type = "text/css" href = "stylesheets/blog_styles.css" />
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<title> Index </title>
+</head>
+
+<body id = "body">
+
+	<!-- Header/banner -->
+
+	<header id = "header">
+		<!-- Image here -->
+		<img src = "http://i.imgur.com/XhuSV28.jpg" height = "450px" width = "100%"/>
+		<p id = "banner_title"> Musings </p>
+		<p id = "banner_text"> by Amol </p>
+	</header>
+
+	<!-- Links Bar -->
+
+	<nav id = "navbar">
+	<ul>
+		<li class = "bar"><a href = "#">Link 1</a></li>
+		<li class = "bar"><a href = "#">Link 2</a></li>
+		<li class = "bar"><a href = "#">Link 3</a></li>
+		<li class = "bar"><a href = "#">Link 4</a></li>
+		<li class = "bar"><a href = "#">Link 5</a></li>
+	</ul>
+	<p align = "center"> (When I learn more JavaScript, I want this to stay at the top of the page while you scroll.  And hopefully have actual stuff.) </p>
+	</nav>
+
+	<!-- Left Sidebar -->
+
+	<aside id = "leftbar">
+		<p class = "lefttext">  Navigation </p>
+		<ul class = "leftlist">
+			<li> <a href = "http://amolborcar.github.io"> Home </a></li>
+			
+			<!-- <li> Assignments
+				<ul>
+					<li> <a href = "unit1_week1/dbc1.html"> DBC1 </a> </li>
+					<li> <a href = "unit1_week1/dbc2.html"> DBC2 </a> </li>
+					<li> <a href = "unit1_week1/fav_sites.html"> My Favorite Websites </a></li>
+					<li> <a href = "unit1_week1/wireframe_sites.html"> Wireframe Sites </a>
+					</li>
+					<li> <a href = "unit1_week1/my_wireframe.html"> My Wireframe </a> </li>
+				</ul>
+			</li>
+			<li> Cultural Blog
+				<ul>
+					<li> <a href = "unit1_week1/week2_cultural_blog.html"> Week 2 Cultural Blog </a> </li>
+					<li> <a href = "unit1_week1/week3_cultural_blog.html"> Week 3 Cultural Blog </a> </li>
+				</ul>
+			</li>
+			<li> Technical Blog
+				<ul>
+					<li> <a href = "unit1_week1/week2_technical.html"> Technical Blog - Margins, Borders, and Padding </a> </li>
+					<li> <a href = "unit1_week1/week3_technical.html"> Technical Blog - Why is JavaScript so Popular? </a> </li>
+				</ul>
+			</li> -->
+
+		</ul>
+	
+
+	</aside>
+
+
+		<!-- Right Sidebar -->
+
+	<aside id = "rightbar">
+		<h1> About the author </h1>
+		<img class = "rightpic" src = "http://img1.wikia.nocookie.net/__cb20130830065058/cardfight/images/7/7a/Smiley-face-1600x1200-wallpaper-775678.jpg" />
+		<p class = "righttext"> My name is Amol Borcar.  I am an aspiring developer currently enrolled in Dev Bootcamp in San Francisco.  I am interested in both web development and data science, so I chose to do Dev Bootcamp to get my feet wet in the tech world.  This blog contains my assignments for Dev Bootcamp Phase 0.  If you have any suggestions, please <a href = "mailto:aborcar@gmail.com?Subject=Dev%20Bootcamp%20Blog"> Email me! </a> </p><br/>
+		<p class = "righttext"> Look me up! </p>
+		<ul class = "rightlist">
+			<li><a href = "https://www.linkedin.com/pub/amol-borcar/6a/aa7/3b" target = "_blank"><img class = "icon" src = "http://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" /></a></li>
+			<li><a href = "https://twitter.com/borcnation" target = "_blank"><img class = "icon" src = "https://g.twimg.com/Twitter_logo_blue.png" /></a></li>
+			<li><a href = "https://www.facebook.com/amol.borcar" target = "_blank"><img class = "icon" src = "http://webmasterfacts.com/wp-content/uploads/2012/06/Facebook-logo.jpg" /></a></li>
+		</ul>
+	</aside>
+
+
+	<section class = "content">
+		<article class = "blogpost">
+
+		<h2> What is Rails? </h2>
+		<h3> May 25, 2014 </h3>
+
+		<h4> Introduction </h4>
+
+		<p>
+			Dev Bootcamp is focused mainly on teaching web development via Ruby on Rails.  This week the technical blog prompt was to research one of a given set of topics.  One of the topics was "what is Rails?"  I read that and thought "hey, yeah, I'm about to dive into Rails and I really don't even know what it is!"  So far we've covered HTML/CSS, JavaScript, Ruby, and SQL, but no Rails, so I did some research and will attempt to explain at a high level what Rails actually is. 
+		</p>
+
+		<h4> Ok, so What is Rails? </h4>
+
+		<p>
+			Ruby on Rails, or Rails for short, is a web application framework that utilizes the Ruby programming language to build applications.  Rails interacts with the bare bones of a web page (HTML, CSS, and sometimes JavaScript) to create a more dynamic web application.  Rails runs on a web server, so it is a "back end" platform that performs its functionality behind the scenes (as opposed to on the screen of a web browser such as Chrome or Firefox).  I won't go into all the details, but basically languages like Rails (and there are many other comparable frameworks) enable programmers to build much more complicated and deeper websites and applications.  <a href = "https://twitter.com/" target = "blank">Twitter</a>, for example, <a href = "http://en.wikipedia.org/wiki/Twitter#Technology" target = "blank">was originally built on Rails</a>, as were popular sites like <a href = "http://tech.hulu.com/blog/2012/05/14/347/" target = "blank">Hulu</a>, <a href = "http://pitchfork.com/" target = "blank">Pitchfork</a>, and <a href = "https://github.com/blog/530-how-we-made-github-fast">Github</a>.
+		</p>
+
+		<h4> What Makes Rails Unique? </h4>
+		<p>
+			Rails was released in late 2005 with the goal of making collaboration and maintenance easier than in other frameworks.  Ruby was created about a decade earlier, but many of the goals were the same: creating a simple, intuitive, clean programming language that eliminated unnecessary code.  Rails' creator, David Heinemeier Hansson, liked this about Ruby and wanted to create a similar framework.
+		</p>
+		<p> 
+			Rails, unlike other web frameworks, has a set of conventions that almost all programmers adhere to.  This reduces clutter and unnecessary code found in projects built using other languages.  For example, if you create an object in Rails called "User" it will automatically save data to a database table called "users" instead of having the programmer assign a table for the data to be saved to.  This assumption means that if a programmer sticks to this convention, he or she can eliminate chunks of code.  However, if someone deviates from this convention, then the code either will not work or will become unnecessarily lengthy.  I'll admit that at first this seemed counter-intuitive to me: much of what I hear nowadays is about NOT doing things according to convention or "the way they should be done," but a programming language of all things has a set way of doing things.  However, when I read the reasoning behind it, it made a lot of sense.
+		</p>
+		<p>
+			Rails also embraces Ruby's DRY (Don't Repeat Yourself) mentality which makes it easier to collaborate on code.  The fact that everyone uses the same conventions means that one person's code will likely be easy to interpret by another Rails programmer.  So if a new programmer takes over a particular application, he or she should be able to pick up the code pretty easily.
+		</p>
+
+		<h4> Why is Rails Gaining in Popularity? </h4>
+		<p>
+			All of the reasons above are reasons why Rails is becoming more popular, but also the growth in popularity of Ruby (again, for reasons described above) lends itself to Rails' growth.  Another big advantage is that Rails is open source; this means that programmers can design their own Rails improvements and share them.  In addition, one very attractive feature of Ruby is Gems, which are packages for the Ruby language that contain custom programs, modules, or anything really that enable programmers to share code.  Ruby Gems increase the scope and abilities of the language, and the network of programmers that use Ruby are always sharing new Gems they've made.  As Ruby becomes a more powerful language, it follows that Rails does as well!
+		</p>
+
+		<h4> Further Reading </h4>
+
+		<p> 
+			The following sites helped me greatly in my research, and if you're interested I recommend reading these and looking around for more information!
+		</p>
+		<ul>
+			<li> Wikipedia - <a href = "http://en.wikipedia.org/wiki/Ruby_on_Rails">Link</a></li>
+			<li> What is Ruby on Rails? - <a href = "http://railsapps.github.io/what-is-ruby-rails.html">Link</a></li>
+			<li> What is Ruby & What is Rails? - <a href = "http://forum.codecall.net/topic/64132-what-is-ruby-what-is-rails-are-they-same/">Link</a></li>
+		</ul>
+
+
+
+		</article>
+	</section>
+
+	<footer id = "footer">
+		<p> This is the footer, not sure what will be here </p>
+	</footer>
+</body>
+</html>
