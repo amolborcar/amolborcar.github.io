@@ -1,0 +1,167 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title>Amol's Blog</title>
+    <meta name="description" content="">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-	scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="../../stylesheets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../stylesheets/bootstrap/css/bootstrap-glyphicons.css" rel="	stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../stylesheets/main.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu|Lobster|Roboto|Roboto+Condensed|Montserrat|Titillium+Web|Dancing+Script' rel='stylesheet' type='text/css'>
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="../../stylesheets/bootstrap/js/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header/banner -->
+
+    <div class="container" id="main">
+
+        <div class="navbar navbar-fixed-top">
+
+            <div class = "container col-12">
+                <h2 class = "header-title pull-left"><a href = "http://amolborcar.github.io"><strong>Amol Borcar</strong></a></h2>
+                <a class = "btn-lg btn-default pull-right navbutton" href = "#" data-toggle = "tooltip" rel = "tooltip" data-placement = "bottom" title = "Coming soon!"><span class = "glyphicon glyphicon-pencil"></span> Contact Me</a>
+            </div> <!--  end container col-12 -->
+
+        </div>
+        <!-- end navbar-fixed-top -->
+
+        <div class="container col-12">
+            <div class="blogpost">
+                <!-- Buttons to return to home and to the blog -->
+                <div class="btn-group btn-group-justified index-buttons">
+                    <a class="btn btn-warning" href="../blog_welcome.html">Blogs Home</a>
+                    <a class="btn btn-info" href="http://amolborcar.github.io">Site Home</a>
+                </div>
+                <!-- end btn group justified -->
+
+                <!-- BLOG TEXT GOES HERE -->
+
+                <h2 class="blog-title">SQL Injection and Why It's a Problem</h2>
+                <h3 class="blog-date">May 16, 2014</h3>
+                <hr>
+
+                <p>
+                    SQL Injection is one of numerous attack techniques that hackers can use to either gain access to, alter, or delete personal information from a database. SQL Injection, put simply, is the act of adding a little extra into an input to a message you're sending to a website in order to cause trouble. When I first read about it, it occurred to me not only how simple it is but also how destructive it can be. I like a lot of people have heard stories of large companies being hacked and people's credit card information or social security numbers being stolen, but I always assumed that this all took place through complex hacks with groups of malicious people working in some shady underground bunker (I watch too many movies). Turns out, that's not necessarily the case. Companies even as large as <a href="http://www.cgisecurity.com/2007/06/hacker-defaces.html" target="blank">Microsoft</a> and <a href="http://www.cbsnews.com/news/yahoo-reportedly-hacked-is-your-account-safe/" target="blank">Yahoo!</a> have fallen prey to what turns out is a pretty simple technique.
+                </p>
+                <p>
+                    SQL Injection works by supplying an input that alters the SQL statements that pull information to give the website. A common example of SQL being used in a website is to process login information (i.e. a username/password). The user would supply his or her username/password, and if those credentials are present in the database, the user would be allowed to continue. A common example I've found online is as follows:
+                    <br/>A user inputs a username, which is processed by the following SQL statement:
+                    <br/>
+                </p>
+                <div class="codeblock">
+                    SELECT * FROM users WHERE name = ' + userName + ';
+                </div>
+                <p>
+                    This code would allow only a userName that is present in the users table to pass through the barrier. However, a person trying to get in without authorized entry could use SQL Injection like this:
+                </p>
+                <div class="codeblock">
+                    SELECT * FROM users WHERE name = ' ' or '1' = '1';
+                </div>
+                <p>
+                    Doing this is remarkably simple. The person would simply enter the following as the username:
+                </p>
+                <div class="codeblock">
+                    ' or '1' = '1' --
+                </div>
+                <p>
+                    This would add in '1' = '1' to the WHERE condition in the SQL statement Because '1' = '1' is always True, the condition would evaluation to True every time.
+                </p>
+                <p>
+                    This obviously is a very simple example, and almost every large website (I hope) is now prepared to deal with a simple attack. However, the Open Web Application Security Project (OWASP) listed SQL Injection as one of its <a href="https://www.owasp.org/index.php/Top_10_2007-Injection_Flaws" target="blank">top 10 flaws</a> because SQL Injection is such a multifaceted problem. A technique called Blind SQL Injection can be used to detect further vulnerabilities basically by prodding at how the website interacts with its database, and then set the stage for more malicious attacks. Imagine what a disaster it would be if a large company like Amazon lost all of its customer records! Unfortunately, <a href="http://www.businessweek.com/articles/2014-03-13/target-missed-alarms-in-epic-hack-of-credit-card-data" target="blank">some companies</a> have had to deal with that reality.
+                </p>
+                <p>
+                    Web developers now employ tactics to prevent SQL Injection in their code. One such technique is to only allow input that is of a certain variable type, and fail to recognize another variable type, which most malicious attacks would be. Another similar technique is to disallow any input from the user that contains values that are what you would find in a SQL statement. For example, disallowing single quotes (') which are used in SQL a lot, or not allowing words such as DROP or ALTER. If the code detects any of those, it returns an error. There are now security companies that will audit your website and tell you where it is vulnerable (for a small fee of course), though I think experienced coders should learn to recognize these things for themselves. Of course, this is easier said than done, since no one designs their site to be hackable, but as I learn more and start programming for real I hope to understand all the best ways to prevent SQL Injection on my websites.
+                </p>
+
+            </div>
+            <!-- end blogpost -->
+            <hr>
+        </div>
+        <!-- end container -->
+
+    </div>
+    <!-- end main -->
+
+    <footer class="navbar-fixed-bottom">
+        <div class="container">
+            <!-- Footer area: follow me on Twitter, Facebook, LinkedIn, GitHub -->
+
+            <div class="col-12" id="footer-heading">
+                <h4>Follow me on social media!</h4>
+
+            </div>
+            <!-- end footer-heading -->
+
+            <div class="col-12 footer-row">
+                <div class="col-4"></div>
+                <!-- blank div -->
+
+                <div class="col-1">
+                    <a href="https://twitter.com/borcnation" target="_blank">
+                        <img class="footer-img" src="https://g.twimg.com/Twitter_logo_blue.	png" />
+                    </a>
+                </div>
+                <!-- end col-1 -->
+
+                <div class="col-1">
+                    <a href="https://www.facebook.com/amol.borcar" target="_blank">
+                        <img class="footer-img" src="http://webmasterfacts.com/wp-	content/uploads/2012/06/Facebook-logo.jpg" />
+                    </a>
+                </div>
+                <!-- end col-1 -->
+
+                <div class="col-1">
+                    <a href="https://www.linkedin.com/pub/amol-borcar/6a/aa7/3b" target="_blank">
+                        <img class="footer-img" src="http://upload.	wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" />
+                    </a>
+                </div>
+                <!-- end col-1 -->
+
+                <div class="col-1">
+                    <a href="https://github.com/amolborcar" target="_blank">
+                        <img class="footer-img" src="../../images/octocat_clear.png" />
+                    </a>
+                </div>
+                <!-- end col-1 -->
+
+                <div class="col-4"></div>
+                <!-- blank div -->
+            </div>
+            <!-- end footer-row -->
+
+        </div>
+        <!-- end container -->
+
+
+    </footer>
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../../stylesheets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../../js/script.js"></script>
+
+</body>
+
+</html>
