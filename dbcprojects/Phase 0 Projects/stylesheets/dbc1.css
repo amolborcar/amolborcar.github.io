@@ -1,0 +1,28 @@
+#heading {
+	font-weight: bold;
+}
+
+body {
+	background-color: #E0FFFF;
+	font-family: arial;
+}
+
+p {
+	color: black;
+	font-size: 14px;
+}
+
+li {
+	font-size: 12px;
+}
+
+.orange {
+	color: red;
+	font-family: serif;
+	font-size: 20px;
+}
+
+.subheading {
+	color: green;
+}
+
